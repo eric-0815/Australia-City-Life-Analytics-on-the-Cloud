@@ -1,15 +1,17 @@
 #!flask/bin/python
 from flask import Flask, jsonify, make_response
+from flask_cors import CORS
 # pip install couchdb
 import couchdb
 
 app = Flask(__name__)
+CORS(app)
 
 # couch db auth
 database = 'ccc_twitter_test'
 server = "localhost:5984"
 admin_username = "admin"
-admin_password = "12354"
+admin_password = "12345"
 
 # connect to couch db
 server = couchdb.Server()
@@ -31,7 +33,7 @@ URL = '_design/twitterInfo/_view/twitter'
 view = db.view(URL)
 row_number = view.total_rows
 
-@app.route('/api/v1/scenarios', methods=['GET'])
+@app.route('/api/v1/scenario2', methods=['GET'])
 def get_scenarios():
     return jsonify({'row_number': row_number})
 

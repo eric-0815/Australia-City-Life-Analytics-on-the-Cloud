@@ -18,24 +18,21 @@ server = couchdb.Server()
 server.resource.credentials = (admin_username, admin_password)
 db = server[database]
 
-# test create view
-# {
-#   "_id": "_design/twitterInfo",
-#   "_rev": "19-e11d2ad5aa9722627270825ccf63d76c",
-#   "views": {
-#     "twitter": {
-#       "map": "function (doc) {\n  array = [\"book\", \"bank\", \"good\"]\n  for(let j = 0; j < array.length; j++){ \n   if(doc.text.includes(array[j]))  emit(doc.text, doc.created_at);\n  }\n}"
-#     }
-#   },
-#   "language": "javascript"
-# }
 URL = '_design/twitterInfo/_view/twitter'
 view = db.view(URL)
 row_number = view.total_rows
 
+# @app.route('/api/v1/scenario1', methods=['GET'])
+# def get_scenario_one():
+#     return jsonify(explicit_perc)
+
 @app.route('/api/v1/scenario2', methods=['GET'])
-def get_scenarios():
+def get_scenario_two():
     return jsonify({'row_number': row_number})
+
+# @app.route('/api/v1/scenario3', methods=['GET'])
+# def get_scenario_three():
+#     return jsonify({'row_number': row_number})
 
 # Error Handling
 @app.errorhandler(400)

@@ -10,3 +10,4 @@ six==1.9.0
 Flask-CouchDB==0.2.1
 connexion==2.3.0
 CouchDB==1.2
+textblob==0.8.1

@@ -10,10 +10,10 @@ const MyMapComponent = withScriptjs(
   withGoogleMap(props => {
     return (
       <GoogleMap
-        defaultZoom={14}
-        defaultCenter={{ lat: 60.2517722, lng: 24.8989093 }}
+        defaultZoom={5}
+        defaultCenter={{ lat: -37.872603996110286, lng: 145.07584419726558 }}
       >
-        <Marker position={{ lat: 60.2517722, lng: 24.8989093 }} />
+        <Marker position={{ lat: -37.872603996110286, lng: 145.07584419726558 }} />
       </GoogleMap>
     );
   })
@@ -21,9 +21,9 @@ const MyMapComponent = withScriptjs(
 
 
 const Scenario3 = () => (
-  <div className="App">
+  <div>
       <MyMapComponent
-        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyALLEWvdI0oAzAPfEydwednIX6173KnBUQ&v=3.exp&libraries=geometry,drawing,places"
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt7V8flUvWd_DIfVwCcNlBFvCDJc93hgI&v=3.exp&libraries=geometry,drawing,places"
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `100vh` }} />}
         mapElement={<div style={{ height: `100%` }} />}

@@ -6,8 +6,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Tasks from '../Dashboard/Tasks';
-import Description from '../Dashboard/Description';
+import Task3 from '../Dashboard/Task3';
+import Description3 from '../Dashboard/Description3';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Scenario3 = () => {
-  const scenario1classes = useStyles();
+  const scenario3classes = useStyles();
   const [scenarioData, setScenarioData] = useState();
   useEffect(() => {
     const fetchData = async () => {
@@ -57,7 +57,7 @@ const Scenario3 = () => {
     };
     fetchData();
   }, []);
-  const fixedHeightPaper = clsx(scenario1classes.paper, scenario1classes.fixedHeight);
+  const fixedHeightPaper = clsx(scenario3classes.paper, scenario3classes.fixedHeight);
   return(
     <div>
       <Grid container spacing={3}>
@@ -71,12 +71,12 @@ const Scenario3 = () => {
         </Grid>
         <Grid item xs={12} md={4} lg={3}>
           <Paper className={fixedHeightPaper}>
-            <Tasks />
+            <Task3 />
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={scenario1classes.paper}>
-            <Description />
+          <Paper className={scenario3classes.paper}>
+            <Description3 />
           </Paper>
         </Grid>
       </Grid>

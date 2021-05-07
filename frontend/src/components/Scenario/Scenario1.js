@@ -30,7 +30,7 @@ const Scenario1 = () => {
 
   const scenario2classes = useStyles();
 
-  const url = "https://public.tableau.com/views/LearnEmbeddedAnalytics/SalesOverviewDashboard";
+  const url = "https://public.tableau.com/views/choropleth_vulgarTweetPercentage/2?:language=en";
 
   const ref = useRef(null);
 

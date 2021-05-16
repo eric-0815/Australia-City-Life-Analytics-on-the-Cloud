@@ -17,4 +17,5 @@
     - role: docker-configuration-couchdb
     - role: docker-installation
     - role: docker-proxy
+    - role: docker-create-network
     - role: deploy

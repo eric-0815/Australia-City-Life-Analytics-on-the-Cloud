@@ -3,8 +3,8 @@ services:
   crawler:
     build: .
     volumes:
+    env_file:
+      - ./.env
+    environment:
+      - COUCHDB_URL="http://127.0.0.1"
 
-networks:
-  default:
-    external: true
-    name: net-aio

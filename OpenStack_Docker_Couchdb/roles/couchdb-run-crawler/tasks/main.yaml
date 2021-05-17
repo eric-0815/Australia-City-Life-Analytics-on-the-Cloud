@@ -2,8 +2,8 @@
 
 - name: Start crawler.py at background using nohup
   become: yes
+  environment: "{{ env_vars }}"
   shell: nohup python3 streamCrawler.py &
- 
 
 
 - debug:

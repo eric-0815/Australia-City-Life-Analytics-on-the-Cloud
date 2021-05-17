@@ -10,3 +10,7 @@ working_dir: /home/ubuntu/COMP90024
 
 # proxy
 proxy: http://wwwproxy.unimelb.edu.au:8000/
+
+# Settings
+env_vars:
+  couchdb: http://example.com

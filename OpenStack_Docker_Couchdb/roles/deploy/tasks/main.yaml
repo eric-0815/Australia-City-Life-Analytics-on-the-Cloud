@@ -1,14 +1,14 @@
 - name: run docker compose frontend
-  docker_compose: docker-compose.yml
-    project_src: "~/COMP90024_Assignment2/frontend/"
+  docker_compose:
+    project_src: "../frontend/"
     build: yes
     remove_orphans: yes
     remove_volumes: yes
     recreate: always
 
 - name: run docker compose backend
-  docker_compose: docker-compose.yml
-    project_src: "~/COMP90024_Assignment2/backend/"
+  docker_compose:
+    project_src: "../backend/"
     build: yes
     remove_orphans: yes
     remove_volumes: yes

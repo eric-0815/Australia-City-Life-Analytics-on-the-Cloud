@@ -29,12 +29,16 @@ security_groups:
 instances:
   - name: worker-1
     volumes: ['worker-vol-1']
+    flavor: uom.mse.2c4g
   - name: worker-2
     volumes: ['worker-vol-2']
+    flavor: uom.mse.2c4g
   - name: worker-3
     volumes: ['worker-vol-3']
+    flavor: uom.mse.2c4g
   - name: couchdb-1
     volumes: ['couchdb-vol-1']
+    flavor: uom.mse.2c9g
 
 instance_image: f8b79936-6616-4a22-b55d-0d0a1d27bceb
 instance_key_name: ada

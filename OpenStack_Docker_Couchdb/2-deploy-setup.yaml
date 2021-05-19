@@ -9,7 +9,7 @@
 - hosts: couch
   vars_files:
     - host_vars/work.yaml
-    - host_vars/remote.yaml
+    - host_vars/workremote.yaml
   gather_facts: true
 
   roles:

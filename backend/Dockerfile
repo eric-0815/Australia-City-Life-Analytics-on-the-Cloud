@@ -2,7 +2,7 @@
 FROM python:3.7-alpine
 WORKDIR /code
 ENV FLASK_APP=app.py
-# ENV FLASK_RUN_HOST=0.0.0.0
+ENV FLASK_RUN_HOST=0.0.0.0
 ENV http_proxy http://wwwproxy.unimelb.edu.au:8000/
 ENV https_proxy http://wwwproxy.unimelb.edu.au:8000/
 ENV HTTP_PROXY http://wwwproxy.unimelb.edu.au:8000/

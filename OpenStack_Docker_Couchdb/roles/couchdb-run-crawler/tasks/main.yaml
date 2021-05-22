@@ -1,10 +1,10 @@
 ---
 
-- name: Start crawler.py at background using nohup
+- name: Start streaming_to_couchdb.py at background using nohup
   become: yes
   environment: "{{ env_vars }}"
-  shell: nohup python3 streamCrawler.py &
+  shell: nohup python3 streaming_to_couchdb.py &
 
 
 - debug:
-    msg: "Remote node {{ groups['all'][0]  }} is running streamCrawler on the background."
+    msg: "Remote node {{ groups['all'][0]  }} is running streaming_to_couchdb.py on the background."

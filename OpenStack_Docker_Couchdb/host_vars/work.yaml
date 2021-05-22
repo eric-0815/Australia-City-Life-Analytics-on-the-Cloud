@@ -43,9 +43,9 @@ instances:
 instance_image: f8b79936-6616-4a22-b55d-0d0a1d27bceb
 instance_key_name: ada
 
-dockerhub_username:
-dockerhub_password:
-dockerhub_pulling_image: ada/test:map
+# dockerhub_username:
+# dockerhub_password:
+# dockerhub_pulling_image: ada/test:map
 
 couchdb_user: admin
 couchdb_password: 12345

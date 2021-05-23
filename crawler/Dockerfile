@@ -11,7 +11,7 @@ ENV no_proxy localhost,127.0.0.1,localaddress,172.16.0.0/12,.melbourne.rc.nectar
 COPY . .
 
 
-RUN pip3 install --upgrade pip3
+RUN pip3 install --upgrade pip
 RUN pip3 install tweepy
 RUN pip3 install tweet-preprocessor
 RUN pip3 install couchdb

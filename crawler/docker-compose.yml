@@ -6,5 +6,4 @@ services:
     env_file:
       - ./.env
     environment:
-      - COUCHDB_URL="http://127.0.0.1"
-
+      - COUCHDB_URL="http://admin:12345@172.26.131.136:5984/"

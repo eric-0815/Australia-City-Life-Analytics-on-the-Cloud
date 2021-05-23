@@ -24,7 +24,7 @@ database2 = 'clean_tweet_by_search'
 # server.resource.credentials = (admin_username, admin_password)
 
 # connect to remote db server; comment 1 line below if connecting to local db server
-server = couchdb.Server('http://admin:12345@mycouchdb:5984/')
+server = couchdb.Server('http://admin:12345@172.26.131.136:5984/')
 
 db1 = connect_to_database(database1, server)
 db2 = connect_to_database(database2, server)

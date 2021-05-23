@@ -14,6 +14,7 @@
 
   roles:
     - role: openstack-proxy
+    - role: install-dependency
     - role: docker-installation
     - role: docker-proxy
     - role: couchdb-run-crawler
